@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Button, StyleSheet  } from "react-native";
 
-import Input from '../components/input';
+import Input from '../../components/input';
 
 const styles = StyleSheet.create({
 	container: {
@@ -54,8 +54,8 @@ const Login = ({ navigation }) => {
 
         <Button
           style={styles.btn} 
-          title="Press me"
-          onPress={() => navigation.navigate("Cadastro Pessoa")}
+          title="Press me again"
+          onPress={() => navigation.navigate("Login")}
         />
 			</View>
 
