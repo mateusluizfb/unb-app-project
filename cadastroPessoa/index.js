@@ -8,16 +8,11 @@ import {
   StyleSheet,
 } from "react-native";
 
-const Login = ({navigation}) => {
+const CadastroPessoa = ({navigation}) => {
   const [text, onChangeText] = React.useState("");
   const [pass, onChangePass] = React.useState(null);
 
   const entrar = () => {
-    //navigation.reset({
-    //index: 0,
-    //routes: [{name: "CadastroPessoa"}]
-    //})
-
     navigation.navigate("CadastroPessoa")
   }
 
@@ -87,4 +82,4 @@ const styles = StyleSheet.create({
     width: 30,
   },
 });
-export default Login;
+export default CadastroPessoa;
