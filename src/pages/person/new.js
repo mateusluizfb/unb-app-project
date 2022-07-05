@@ -34,8 +34,6 @@ const styles = StyleSheet.create({
 const Login = ({ navigation }) => {
 	return (
 		<View style={styles.container}>
-			
-			<Text>Open up App.js to start working on your app!</Text>
 
 			<View style={styles.box}>
 				<Input
