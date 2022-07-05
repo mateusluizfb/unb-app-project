@@ -12,12 +12,14 @@ const styles = StyleSheet.create({
 		flexDirection: 'column',
 	},
 	box: {
-		height: 200,
-		width: 300,
-		padding: 20,
+    width: 280,
+    height: 140,
 		borderWidth: 1,
-		borderColor: '#AAAAAA',
-		borderRadius: 5
+		borderRadius: 5,
+    justifyContent: 'center',
+    flexDirection: 'column',
+    justifyContent:'space-between',
+    padding: 20,
 	},
 	input: {
 		borderColor: '#AAAAAA',
@@ -29,33 +31,28 @@ const styles = StyleSheet.create({
 	},
 	label: {
 		flex: 0.3
-	}
+	},
+  btn : {
+    margin: 80,
+  }
 })
 
-const Login = ({ navigation }) => {
+const Start = ({ navigation }) => {
 	return (
 		<View style={styles.container}>
-			
 
 			<View style={styles.box}>
-				<Input
-					labelStyle={styles.label}
-					inputStyle={styles.input}
-					label="Nick"
-					placeholder="Email" 
-				/>
-
-				<Input
-					labelStyle={styles.label}
-					inputStyle={styles.input}
-					label="Senha"
-					placeholder="Senha" 
-				/>
+        <Button
+            style={styles.btn} 
+            title="Entrar"
+            onPress={() => navigation.navigate("Login")}
+            accessibilityLabel="Entrar com o email e senha no aplicativo"
+          />
 
         <Button
           style={styles.btn} 
-          title="Press me"
-          onPress={() => navigation.navigate("Home")}
+          title="Cadastrar"
+          onPress={() => navigation.navigate("Cadastro Pessoa")}
         />
 			</View>
 
@@ -63,4 +60,4 @@ const Login = ({ navigation }) => {
 	)
 }
 
-export default Login;
+export default Start;

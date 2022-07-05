@@ -16,7 +16,8 @@ const styles = StyleSheet.create({
 		width: 300,
 		padding: 20,
 		borderWidth: 1,
-		borderRadius: 5
+		borderRadius: 5,
+		borderColor: '#AAAAAA',
 	},
 	input: {
 		borderColor: '#AAAAAA',
@@ -53,7 +54,7 @@ const Login = ({ navigation }) => {
         <Button
           style={styles.btn} 
           title="Press me again"
-          onPress={() => navigation.navigate("Login")}
+          onPress={() => navigation.navigate("Home")}
         />
 			</View>
 
