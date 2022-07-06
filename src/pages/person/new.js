@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, Button, StyleSheet, TextInput } from "react-native";
-import { createUserWithEmailAndPassword } from "../../../firebase.config.js"
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../firebase.config.js";
 import styles  from "./styleNew.js";
 
